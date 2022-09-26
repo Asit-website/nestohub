@@ -720,7 +720,7 @@ ul.countdown li p { font-size: 12.642px; }
   }
 
   .hero-unit{
-    height: 80vh;
+    height: auto;
   }
 }
 
