@@ -716,12 +716,17 @@ ul.countdown li p { font-size: 12.642px; }
      font-size: 24px;
   }
 
+<<<<<<< HEAD
   .player-button{
     top: -130px;
   }
 
   .app{
     flex-direction: column;
+=======
+  .hero-unit{
+    height:100vh;
+>>>>>>> ef726c4c70b81cd53a205c2b7c1ae66e6f967db0
   }
 
   
