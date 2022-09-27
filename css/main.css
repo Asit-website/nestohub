@@ -94,7 +94,6 @@ body {
   color: #333;
   font-weight: 400;
   overflow-x: hidden;
-  height: 100vh;
   width: 100vw;
 }
 
@@ -136,30 +135,24 @@ video{
   z-index: -1;
   filter: brightness(0.5); */
 
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+ 
+  /* z-index: -1; */
 
 }
 
 
 .hero-unit {
-  /* background: url(../img/Mask\ Group\ 1.png) center center no-repeat fixed; */
-  
+  /* background-image: url(../img/Group\ 10.png), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
   background-size: cover;
-  /* background-position: center; */
+  background-image: url(../img/Group\ 10.png);
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  /* background-color: black; */
+   background-position: center;
+   background-blend-mode: darken;
+   filter: brightness(0.8);
   color: #fff;
-  filter: brightness(0.9);
-  height: 100%;
+  /* height: ; */
 
 }
 
@@ -712,6 +705,10 @@ ul.countdown li p { font-size: 12.642px; }
     margin:30px auto;
 
   }
+
+  .app{
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width:450px){
@@ -719,9 +716,15 @@ ul.countdown li p { font-size: 12.642px; }
      font-size: 24px;
   }
 
-  .hero-unit{
-    height: 60vh;
+  .player-button{
+    top: -130px;
   }
+
+  .app{
+    flex-direction: column;
+  }
+
+  
 }
 
 

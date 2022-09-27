@@ -16,15 +16,87 @@
 <link href="css/red.css" rel="alternate stylesheet" title="red">
 <link href="css/yellow.css" rel="alternate stylesheet" title="yellow">
 <link href="css/blue.css" rel="alternate stylesheet" title="blue">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+<style>
+     iframe{
+      max-width: 450px;
+      width: 100%;
+      height:400px;
+      max-height: 100%;
+      object-fit: cover;
+
+     }
+
+     .video-player{
+        max-width: 550px;
+        width: 100%;
+        /* height: 600px; */
+        max-height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .video{
+     width: 100%;
+     border-radius: 15px;
+     filter: brightness(0.8);
+    }
+
+  
+
+    .player-controls{
+      position: relative;
+    }
+
+    .player-button{
+      position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EA696A;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.player-button i{
+  font-size: 20px;
+  align-items: center;
+}
+
+.app{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+
+}
+
+.app img{
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+ margin: 30px 10px;
+}
+
+@media only screen and (max-width:450px){
+  .player-button{
+    position: absolute;
+    top: -90px;
+  }
+}
+    
+       /* position: absolute; */
+    
+</style>
 <body>
 
 <!--hero-unit-->
 
 <div class="hero-unit">
-  <video autoplay muted loop>
-    <source src="img/videoplayback (1).mp4">
-  </video>
+ 
   <!-- <div class="overlay"></div> -->
   <!--container-->
   <div class="container">
@@ -50,7 +122,15 @@
       <div class="row">
         <aside class="col-md-7"> 
 
-            
+          <!-- <iframe src="https://www.youtube.com/embed/PAZEh6C6U98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+          <div class="video-player">
+            <video  src="img/videoplayback (1).mp4" class="video" poster="img/NoPath - Copy (50).png" ></video>
+          
+            <div class="player-controls">
+                 <button class="player-button" title="play"><i class="fa-solid fa-play"></i></button>
+            </div>
+          </div>
         </aside>
         
         <div class="col-md-5 white-sect">
@@ -89,12 +169,12 @@
       <p>Broker Network app is a suite of services specifically designed for Indian real estate brokers and developers to maximize their business.</p>
     
       <div class="app">
-         <img src="img/Image 3.png" alt="">
-         <img src="" alt="">
+         <img src="img/google-play.png" alt="">
+         <img src="img/app.png" alt="">
       </div>
    </div>
    <div class="second-proff">
-      <img src="img/bn-main.png" alt="">
+      <img src="img/Real-Estate.png" alt="">
    </div>
 </div>
 <div class="timer section-spacing">
@@ -128,9 +208,9 @@
 <!--countdown timer end--> 
 
 <!--features-->
-<section class="features text-center section-spacing"> 
+<!-- <section class="features text-center section-spacing"> 
   <!--container-->
-  <div class="container">
+  <!-- <div class="container">
     <h2>OUR FEATURES</h2>
     <div class="row">
       <div class="col-md-4">
@@ -152,15 +232,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--container end--> 
-</section>
+</section> -->
 <!--features end--> 
 
 <!--counter-->
-<div class="counter text-center">
+<!-- <div class="counter text-center">
   <div class="overlay"></div>
-  <!--container-->
   <div class="container">
     <div class="row">
       <div class="col-sm-3 col-xs-6"> <i class="fa fa-users fa-3x"></i>
@@ -181,8 +260,8 @@
       </div>
     </div>
   </div>
-  <!--container end--> 
-</div>
+  
+</div> -->
 <!--counter end--> 
 
 <!-- contact-->
@@ -270,7 +349,30 @@
   </div> -->
 </div>
 <!--Theme switcher end--> 
+<script>
+  const videoPlayer = document.querySelector('.video-player');
+ const video = videoPlayer.querySelector('.video');
+ 
+ const playButton = videoPlayer.querySelector('.player-button');
+ 
+ 
+ //play and pause button
+ 
+ playButton.addEventListener('click',(e)=>{
+    if(video.paused){
+     video.play();
+    //  e.target.textContent = '⏸️'
+    playButton.innerHTML="<i class='fa-sharp fa-solid fa-pause'></i>"
+ 
+    }
+    else{
+     video.pause();
+    //  e.target.textContent = ' ⏯️'
 
+    playButton.innerHTML="<i class='fa-solid fa-play'></i>"
+    }
+ })
+ </script>
 <script src="js/jquery-1.11.1.min.js"></script> 
 <script src="js/retina.min.js"></script> 
 <script src="js/waypoints.min.js"></script> 
@@ -281,6 +383,8 @@
 <script src="js/jquery.validate.min.js"></script> 
 <script src="js/themeswitch.js"></script> 
 <script src="js/main.js"></script>
+
+
 </body>
 
 <!-- Mirrored from csmthemes.com/themes/beta/static/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Sep 2022 10:10:32 GMT -->
