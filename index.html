@@ -30,9 +30,8 @@
      }
 
      .video-player{
-        max-width: 550px;
+        max-width: 700px;
         width: 100%;
-        /* height: 600px; */
         max-height: 100%;
         position: relative;
         overflow: hidden;
@@ -41,7 +40,11 @@
     .video{
      width: 100%;
      border-radius: 15px;
-     filter: brightness(0.8);
+     /* filter: brightness(0.8); */
+    }
+
+    video[poster]{
+      filter: brightness(0.7);
     }
 
   
@@ -52,7 +55,7 @@
 
     .player-button{
       position: absolute;
-    top: -150px;
+    top: -160px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #EA696A;
@@ -64,13 +67,13 @@
 
 .player-button i{
   font-size: 20px;
-  align-items: center;
+  display: block;
+  margin: auto;
 }
 
 .app{
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 
 }
 
@@ -103,29 +106,33 @@
     <header class="row">
       <div class="col-md-6 col-sm-6"> 
         <!--logo-->
-        <!-- <div class="logo"> <img src="img/Screenshot (119).png"  alt="logo"> </div> -->
+        <div class="logo"> <img src="img/Group 1.png"  alt="logo"> </div>
         <!--logo end--> 
       </div>
       <div class="col-md-6 col-sm-6 clearfix"> 
         <!--social-->
-        <!-- <ul class="social text-center">
-          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-        </ul> -->
+        <ul class="social text-center">
+          <li><a href="https://www.youtube.com/channel/UCeEQa6y1Fbb-FqMcnFIbn_Q" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="https://www.facebook.com/Nestohub-103562212526400" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/nestohub/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
         <!--social end--> 
+
+       
       </div>
+     
     </header>
-    
+   
     <!--cta-->
     <div class="cta">
       <div class="row">
-        <aside class="col-md-7"> 
+        <aside class="col-md-8"> 
 
           <!-- <iframe src="https://www.youtube.com/embed/PAZEh6C6U98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
           <div class="video-player">
-            <video  src="img/videoplayback (1).mp4" class="video" poster="img/NoPath - Copy (50).png" ></video>
+            <video   class="video" poster="img/NoPath - Copy (50).png"  > <source src="img/Y2Mate.is - NESTO HUB 1-PAZEh6C6U98-720p-1654485146507.mp4" type="video/mp4">
+            </video>
           
             <div class="player-controls">
                  <button class="player-button" title="play"><i class="fa-solid fa-play"></i></button>
@@ -133,17 +140,19 @@
           </div>
         </aside>
         
-        <div class="col-md-5 white-sect">
+        <div class="col-md-4 white-sect">
           <header class="welcome-message text-center">
             <h1>Get Early Access</h1>
             <h2>Subscribe Now</h2>
             <!--sub-form-->
             <div class="sub-form">
-              <form role="form" id="mc-form" action="mailto:asitmandal492@gmail.com" method="get">
+              <form role="form" id="mc-form">
                 <!-- http://csmthemes.us3.list-manage.com/subscribe/post-json?u=9666c25a337f497687875a388&amp;id=5b881a50fb&amp;c=? -->
-                <input type="email" placeholder="Email Address" required value="" name="EMAIL">
-                <button style="background-color: #FB0204; border: none;" type="submit" class="button" id="mc-subscribe" value="Subscribe" name="subscribe">GET ACCESS</button>
+                <!-- <input class="first-sys" type="email" placeholder="Email Address" required value="" name="EMAIL"> -->
+               
+                <!-- <a style="text-decoration: none;" target="_blank" href="https://forms.gle/qWLebR99gXmJvE5i6"><button class="btn btn-danger regist">Register Here</button></a> -->
               </form>
+             <a target="_blank" href="https://forms.gle/qWLebR99gXmJvE5i6"><button style="background-color: #EA696A; border: none;" type="submit" class="button" id="mc-subscribe" value="Subscribe" name="subscribe">Get Acess</button></a>
               <p class="terms">* We won’t spam</p>
               <p id="mc-notification"></p>
             </div>
@@ -154,10 +163,10 @@
       </div>
     </div>
     <!--cta end--> 
-    
   </div>
-  <!--container end--> 
   
+  <!--container end--> 
+ 
 </div>
 <!--hero-unit end--> 
 
@@ -209,7 +218,7 @@
 
 <!--features-->
 <!-- <section class="features text-center section-spacing"> 
-  <!--container-->
+ -container-->
   <!-- <div class="container">
     <h2>OUR FEATURES</h2>
     <div class="row">
@@ -234,7 +243,7 @@
     </div>
   </div> -->
   <!--container end--> 
-</section> -->
+
 <!--features end--> 
 
 <!--counter-->
