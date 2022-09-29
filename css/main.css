@@ -143,14 +143,14 @@ video{
 
 
 .hero-unit {
-  /* background-image: url(../img/Group\ 10.png), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
+  background-image: url(../img/NoPath\ -\ Copy\ \(50\).png), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-size: cover;
-  background-image: url(../img/Group\ 10.png);
+  /* background-image: url(../img/Group\ 10.png); */
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
    background-position: center;
-   background-blend-mode: lighten;
+   background-blend-mode: darken;
    /* filter: brightness(0.8); */
   color: #fff;
   /* height: ; */
@@ -473,6 +473,8 @@ textarea[class="form-control"] { padding: 0.75em 12px; }
   width: 50%;
   margin: 0 auto;
   display: block;
+  background-color: #EA696A;
+  border: none;
 }
 
 .success-sf,
@@ -596,7 +598,7 @@ textarea[class="form-control"] { padding: 0.75em 12px; }
 }
 
 .logo img{
-  width: 150px;
+  width: 180px;
   max-width: 100%;
 }
 
@@ -743,7 +745,6 @@ ul.countdown li p { font-size: 12.642px; }
     margin: 15px 0px;
   }
 
-  
 }
 
 @media only screen and (max-width:766px){
