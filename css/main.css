@@ -143,15 +143,13 @@ video{
 
 
 .hero-unit {
-  background-image: url(../img/NoPath\ -\ Copy\ \(50\).png), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  /* background-image: url(../img/NoPath\ -\ Copy\ \(50\).png), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
   background-size: cover;
-  /* background-image: url(../img/Group\ 10.png); */
+  background-image: url(../img/mainbanner.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-   background-position: center;
-   background-blend-mode: darken;
-   /* filter: brightness(0.8); */
+   filter: brightness(0.99);
   color: #fff;
   /* height: ; */
 
@@ -223,6 +221,10 @@ video{
   padding-right: .5em;
 }
 
+.social i{
+  color: #c00000;
+}
+
 
 .social li:last-child { padding-right: 0; }
 
@@ -238,7 +240,7 @@ video{
   transition: background 1s ease;
 }
 
-.social li a:hover { background: #c00000; }
+.social li a:hover { background: #eaadad; }
 
 h2 { font-weight: 600; }
 
@@ -554,7 +556,7 @@ textarea[class="form-control"] { padding: 0.75em 12px; }
   margin: 0 auto;
   left: 0;
   right: 0;
-  background: #51bf87;
+  background: #c00000;
 }
 
 /* ==========================================================================
