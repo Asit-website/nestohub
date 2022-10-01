@@ -39,6 +39,11 @@
        
     }
 
+    .video-player:hover .player-button{
+      display: block;
+      transition: 0.5s;
+    }
+
     .video{
      width: 100%;
      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -62,6 +67,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50px;
+    display: none;
 }
 
 .player-button i{
@@ -93,7 +99,7 @@
     
 @media only screen and (max-width:375px){
   .welcome-message h1{
-    font-size: 22px;
+    font-size: 21px;
   }
   .first-proff h1 {
     font-size: 22px;
@@ -128,13 +134,17 @@ ul.countdown{
 .contact .btn{
   font-size: 14px;
 }
+
 .player-button{
+ 
   width: 40px;
   height: 40px;
 }
 
 .player-button i{
+ 
   font-size: 14px;
+  
 }
 
 @media only screen and (max-width:276px) {
@@ -183,7 +193,7 @@ ul.countdown{
           <!-- <iframe src="https://www.youtube.com/embed/PAZEh6C6U98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
           <div class="video-player">
-            <video  class="video" poster="img/Screenshot (131).png" autoplay  playsinline> <source  src="img/nestovideo.mp4" type="video/mp4">
+            <video  class="video" poster="img/Screenshot (131).png" autoplay=""  playsinline="" preload="metadata"> <source  src="img/nestovideo.mp4" type="video/mp4">
             </video>
             <div class="player-controls">
                  <button class="player-button" title="play"><i class="fa-solid fa-play"></i></button>
@@ -195,8 +205,10 @@ ul.countdown{
         
         <div class="col-md-4 white-sect">
           <header class="welcome-message text-center">
-            <h1>Get Early Access</h1>
-            <h2>Subscribe Now</h2>
+            <!-- <h1>Get Early Access</h1> -->
+            <h1>To get access to the premium inventory and get opportunity to earn high brokerage</h1>
+            <!-- <h2>Subscribe Now</h2> -->
+            <h2>Register with NESTOHUB</h2>
             <!--sub-form-->
             <div class="sub-form">
               <form role="form" id="mc-form">
@@ -205,7 +217,7 @@ ul.countdown{
                
                 <!-- <a style="text-decoration: none;" target="_blank" href="https://forms.gle/qWLebR99gXmJvE5i6"><button class="btn btn-danger regist">Register Here</button></a> -->
               </form>
-             <a target="_blank" href="https://forms.gle/qWLebR99gXmJvE5i6"><button style="background-color: #c00000; border: none;" type="submit" class="button" id="mc-subscribe" value="Subscribe" name="subscribe">Get Access</button></a>
+             <a target="_blank" href="https://forms.gle/qWLebR99gXmJvE5i6"><button style="background-color: #c00000; border: none;" type="submit" class="button" id="mc-subscribe" value="Subscribe" name="subscribe">Register now for FREE <br><span style="font-size: 12px;">(for Brokers/Advisors/Agenmts)</span></button></a>
               <p class="terms">* We won’t spam</p>
               <p id="mc-notification"></p>
             </div>
@@ -226,7 +238,7 @@ ul.countdown{
 <!--countdown timer-->
 <div class="proff">
    <div class="first-proff">
-     <h1>Professional solution for <br>  real estate brokers</h1>
+     <h1>India's first B2B PropTech platform designed exclusively for brokers</h1>
       <p>
         Nestohub app is a solution to major problems faced by builder & broker and maximize their business.</p>
     
@@ -353,6 +365,7 @@ ul.countdown{
               <textarea class="slide-right form-control" name="message" id="message-s" rows="4" placeholder="Enter Your Message" required></textarea>
             </div>
             <button type="submit" class="slide-right btn button" id="submit-btn-s">SEND </button>
+            <h3 class="sideer-contact">Email us at info@nestohub.co</h3>
           </form>
           
           <!--contact form end--> 
@@ -371,16 +384,6 @@ ul.countdown{
   <div class="container">
     <div class="row">
       <div class="col-md-12"> 
-        
-        <!--Social media-->
-        <!-- <ul class="social-footer">
-          <li class="slide-left"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li class="slide-top"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li class="slide-top"><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-          <li class="slide-right"><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        </ul> -->
-        <!--Social media end--> 
-        
         <small class="slide-top">&copy; <span class="bold">Nesto Hub</span></small></div>
     </div>
   </div>
@@ -393,24 +396,7 @@ ul.countdown{
 <div id="preloader">
   <div id="status"></div>
 </div>
-<!--end PRELOAD--> 
 
-<!--Theme switcher-->
-<!-- <div id="customizer" class="panel-closed text-center"> <span class="panel-control"><span class="cog"></span></span> -->
-  <!-- <div id="options">
-    <div class="options-head"> Style Switcher </div>
-    <div class="options-box clearfix">
-      <h6 class="color-head">Color Scheme</h6>
-      <ul class="color-scheme clearfix">
-        <li class="blue"><a href="css/blue.html" data-rel="blue" class="styleswitch"></a></li>
-        <li class="yellow"><a href="css/yellow.html" data-rel="yellow" class="styleswitch"></a></li>
-        <li class="red"><a href="css/red.html" data-rel="red" class="styleswitch"></a></li>
-        <li class="default"><a href="css/main.html" data-rel="green" class="styleswitch"></a></li>
-      </ul>
-    </div>
-  </div> -->
-</div>
-<!--Theme switcher end--> 
 <script>
   const videoPlayer = document.querySelector('.video-player');
  const video = videoPlayer.querySelector('.video');
